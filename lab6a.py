@@ -20,9 +20,9 @@ class Student:
     # Calculate the grade point average of all courses and return a string
     def displayGPA(self):
         if len(self.courses) == 0:
-            return 'GPA of student' + self.name + 'is 0.0'
+            return 'GPA of student ' + self.name + 'is 0.0'
         gpa = 0.0
-        for course in self.courses.values():
+        for grade in self.courses.values():
             gpa += grade
         return 'GPA of student ' + self.name + ' is ' + str(gpa / len(self.courses))
 
